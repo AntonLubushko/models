@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+    <style>
+			body { margin: 0; }
+			canvas { width: 100%; height: 100% }
+		</style>
+</head>
+<body>
+    <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn" id="figure">PYRAMID</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#cube" onclick="setCube()" id="cube">CUBE</a>
+    <a href="#shere" onclick="setSphere()">SPHERE</a>
+    <a href="#pyramid" onclick="setPyramid()">PYRAMID</a>
+  </div>
+</div>
+<input id="scale" type="number" min="1" max="10" value="6" >
+<button onclick="createFigure()">create</button>
+<div class="menu">
+    <ul id="list">
+        
+    </ul>
+</div>
+    <script src="three.js"></script>
+    <script src="code.js"></script>
+</body>
+</html>
